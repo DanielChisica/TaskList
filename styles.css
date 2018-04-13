@@ -1,0 +1,13 @@
+.delete {
+    padding: 10px;
+    background-color: crimson;
+    margin:4px;
+}
+
+body{
+    background-color: yellow;
+}
+
+.date-space{
+    width: 30%;
+}
