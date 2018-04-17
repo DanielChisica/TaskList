@@ -27,7 +27,7 @@ var deleteTask = function () {
 var checkit= function(){
     var p=this.getAttribute("id");
     console.log(" "+p);
-   !taskList[this.getAttribute("id")].isDone;
+   taskList[this.getAttribute("id")].isDone=!taskList[this.getAttribute("id")].isDone;
     repaint();
 };
 
@@ -68,7 +68,7 @@ function repaint() {
         var deleteButton = document.createElement("button");
 
         newCheckbox.setAttribute("type", "checkbox");
-        newCheckbox.setAttribute("input", true);
+        newCheckbox.checked=taskList[i].isDone;
         newCheckbox.setAttribute("class", "check");
         newCheckbox.setAttribute("id",i);
 
